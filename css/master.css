@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #09c5b3;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .box {
+  width: calc((100% - 200px) / 2);
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.container .box h3 {
+  color: white;
+  font-size: 20px;
+  background-color: #282828;
+  height: 80px;
+  padding-top: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container .box h3 span {
+  color: #4caf4f;
+}
+
+.container .box div {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px #897c7c;
+  z-index: 1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.container .box div h4 {
+  margin-bottom: 18px;
+}
+
+.container .box div ul {
+  margin-bottom: 18px;
+  list-style-type: none;
+}
+
+.container .box div ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.container .box div ul li:last-child {
+  margin-left: 11px;
+}
+
+.container .box div ul li i {
+  font-size: 8px;
+  color: #f73859;
+  margin-right: 6px;
+}
+
+.container .box div button {
+  border: none;
+  padding: 8px 25px;
+  outline: none;
+  background-color: #f73859;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .one::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: rgb(255, 255, 255 , 80%);
+  right: -99.5px;
+  top: 0; 
+}
+
+.container .one::after {
+  content: "OR";
+  position: absolute;
+  background-color: white;
+  color: #09c5b3;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 50%;
+  right: 0;
+  margin-right: -120px;
+  margin-top: -20px;
+}
+
+
